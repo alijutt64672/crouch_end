@@ -115,16 +115,16 @@
             this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#2f8ee0','#4bbbce']);
 
             //creating area chart
-            var $areaData = [
-                {y: '2007', a: 0, b: 0, c:0},
-                {y: '2008', a: 150, b: 45, c:15},
-                {y: '2009', a: 60, b: 150, c:195},
-                {y: '2010', a: 180, b: 36, c:21},
-                {y: '2011', a: 90, b: 60, c:360},
-                {y: '2012', a: 75, b: 240, c:120},
-                {y: '2013', a: 30, b: 30, c:30}
+             var $areaData = [
+                {y: '2007', a: 120},
+                {y: '2008', a: 150},
+                {y: '2009', a: 60},
+                {y: '2010', a: 180},
+                {y: '2011', a: 90},
+                {y: '2012', a: 75},
+                {y: '2013', a: 30}
             ];
-            this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b', 'c'], ['Series A', 'Series B', 'Series C'], ['#ccc', '#2f8ee0', '#4bbbce']);
+            this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a'], ['Posts'], ['#4bbbce']);
 
             //creating donut chart
             var $donutData = [

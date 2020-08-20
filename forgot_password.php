@@ -4,35 +4,34 @@ include_once('db/connection.php');
 
     $msg="";
 
-	if(isset($_POST['submit'])){
+    if(isset($_POST['submit'])){
 
-		$email = $_POST['email'];
+        $email = $_POST['email'];
 
-		$check = "SELECT * FROM users WHERE email = '$email'";
-		$result = mysqli_query($conn,$check);
+        $check = "SELECT * FROM admin WHERE email = '$email'";
+        $result = mysqli_query($conn,$check);
 
-		if($result->num_rows > 0 ){
+        if($result->num_rows > 0 ){
 
-			$row  = mysqli_fetch_assoc($result_exists);
-			$pass = $row['password'];
+            $row  = mysqli_fetch_assoc($result_exists);
+            $pass = $row['password'];
 
-			$to = $email;
-			$from = 'support@homeservice.com';
-			$subject = 'Forgot Password';
-			$message = 'This is a system generated email. You requested for password retrieval '.$pass.' is your password. If you have not requested for password Kindly change your password and contact Admin.';
-			$headers = 'From: '. $from . "\r\n" .
-			'Reply-To: '.$from . "\r\n" .
-			'X-Mailer: PHP/' . phpversion();
-			mail($to, $subject, $message, $headers);
-		
-			$msg = 'Kindly Check your Email..!';
+            $to = $email;
+            $from = 'support@socialapp.com';
+            $subject = 'Forgot Password';
+            $message = 'This is a system generated email. You requested for password retrieval '.$pass.' is your password. If you have not requested for password Kindly change your password and contact Admin.';
+            $headers = 'From: '. $from . "\r\n" .
+            'Reply-To: '.$from . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+            mail($to, $subject, $message, $headers);
+        
+            $msg = 'Kindly Check your Email..!';
 
-		} else {
-			$msg = "No User found...!";  
-		}
+        } else {
+            $msg = "No User found...!";  
+        }
  
     }
-
 
 ?>
 
@@ -40,12 +39,12 @@ include_once('db/connection.php');
         <div class="accountbg"></div>
         <div class="wrapper-page">
 
-            <div class="card">
+            <div class="card" style="background: #f1f21b; border-radius: 50px;">
                 <div class="card-body">
-					<?php if($msg != ""){
+                    <?php if($msg != ""){
                       echo '<center><p class="alert alert-danger" role="alert">'.$msg.'</p></center>';
                     } ?>
-					<h3 class="text-center m-0">
+                    <h3 class="text-center m-0">
                         <a href="#" class="logo logo-admin"><img src="assets/images/logo_dark.png" height="90" alt="logo"></a>
                     </h3>
 
@@ -63,7 +62,7 @@ include_once('db/connection.php');
                             </div>
 
                             <div class="form-group row m-t-20">
-                                <div class="col-12 text-right">
+                                <div class="col-sm-12 text-center">
                                     <button class="btn btn-primary w-md waves-effect waves-light" type="submit" name="submit">Reset</button>
                                 </div>
                             </div>
@@ -75,7 +74,8 @@ include_once('db/connection.php');
             </div>
 
             <div class="m-t-40 text-center">
-                <p>© 2019/2020 Social App. Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="http://g7technologies.com/">G7 Technologies</a></p>
+                <p>Remember It ? <a href="index.php" class="font-500 font-14 text-primary font-secondary"> Sign In Here </a> </p>
+                <p>© 2020 Social App. Crafted with <i class="mdi mdi-heart text-danger"></i> <a href="http://g7technologies.com/">G7 Technologies</a></p>
             </div>
 
         </div>

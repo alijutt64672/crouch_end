@@ -72,7 +72,7 @@ include_once('includes/header_end.php');
 														    <td>
                                                                 <center>
                                                                     <a class="btn btn-outline-danger btn-sm waves-effect waves-light" href="block_user.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-account-off"></i></a>
-                                                                    <a class="btn btn-outline-danger btn-sm waves-effect waves-light" href="delete_user.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-trash"></i></a>
+                                                                    <a class="btn btn-outline-danger btn-sm waves-effect waves-light" href="delete_user.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-delete-forever"></i></a>
                                                                 </center>
                                                             </td>
 													    </tr>

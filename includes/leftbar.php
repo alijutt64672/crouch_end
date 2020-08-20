@@ -19,57 +19,57 @@
                     <div id="sidebar-menu">
                         <ul>
 
-                            <li class="menu-title">Main</li>
+                            <li class="menu-title text-dark">Main</li>
 
                             <li>
-                                <a href="Dashboard.php" class="waves-effect"><i class="dripicons-device-desktop"></i><span> Dashboard </span></a>
+                                <a href="Dashboard.php" class="waves-effect text-dark"><i class="dripicons-device-desktop text-dark"></i><span> Dashboard </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-account-circle"></i><span>Users<span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <a href="javascript:void(0);" class="waves-effect text-dark"><i class="mdi mdi-account-circle text-dark"></i><span>Users<span class="float-right"><i class="mdi mdi-chevron-right text-dark"></i></span> </span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="active_users.php">Active Users</a></li>
+                                    <li><a href="active_users.php" class="text-dark">Active Users</a></li>
                                 </ul>
                                 <ul class="list-unstyled">
-                                    <li><a href="blocked_users.php">Blocked Users</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="typcn typcn-edit"></i><span>Posts<span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="create_post.php">Create Post</a></li>
-                                </ul>
-                                <ul class="list-unstyled">
-                                    <li><a href="active_posts.php">Active Posts</a></li>
-                                </ul>
-                                <ul class="list-unstyled">
-                                    <li><a href="blocked_posts.php">Blocked Posts</a></li>
-                                </ul>
-                                <ul class="list-unstyled">
-                                    <li><a href="pending_posts.php">Pending For Approval</a></li>
+                                    <li><a href="blocked_users.php" class="text-dark">Blocked Users</a></li>
                                 </ul>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="typcn typcn-edit"></i><span>Role<span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <a href="javascript:void(0);" class="waves-effect text-dark"><i class="typcn typcn-edit text-dark"></i><span>Posts<span class="float-right"><i class="mdi mdi-chevron-right text-dark"></i></span> </span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="create_role.php">Create Role</a></li>
+                                    <li><a href="create_post.php" class="text-dark">Create Post</a></li>
                                 </ul>
                                 <ul class="list-unstyled">
-                                    <li><a href="all_roles.php">View All Role</a></li>
+                                    <li><a href="active_posts.php" class="text-dark">Active Posts</a></li>
                                 </ul>
                                 <ul class="list-unstyled">
-                                    <li><a href="assign_role.php">Assign Role</a></li>
+                                    <li><a href="blocked_posts.php" class="text-dark">Blocked Posts</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="pending_posts.php" class="text-dark">Pending For Approval</a></li>
                                 </ul>
                             </li>
 
-                            <li class="menu-title">Extra</li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect text-dark"><i class="mdi mdi-account-multiple text-dark"></i><span>Role<span class="float-right"><i class="mdi mdi-chevron-right text-dark"></i></span> </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="create_role.php" class="text-dark">Create Role</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="all_roles.php" class="text-dark">View All Role</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="assign_role.php" class="text-dark">Assign Role</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-title text-dark">Extra</li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-account-settings-variant"></i><span>Settings<span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <a href="javascript:void(0);" class="waves-effect text-dark"><i class="mdi mdi-account-settings-variant text-dark"></i><span>Settings<span class="float-right"><i class="mdi mdi-chevron-right text-dark"></i></span> </span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="changePassword.php">Change Password</a></li>
+                                    <li><a href="changePassword.php" class="text-dark">Change Password</a></li>
                                 </ul>
                             </li>
 

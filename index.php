@@ -38,7 +38,7 @@ session_start();
         <div class="accountbg"></div>
         <div class="wrapper-page">
 
-            <div class="card">
+            <div class="card" style="background: #f1f21b; border-radius: 50px;">
                 <div class="card-body">
                     <?php if($msg != ""){
                       echo '<center><p class="alert alert-danger" role="alert">'.$msg.'</p></center>';
@@ -48,7 +48,7 @@ session_start();
                     </h3>
 
                     <div class="p-3">
-                        <h4 class="text-muted font-18 m-b-5 text-center">Welcome!</h4>
+                        <h4 class="text-dark font-18 m-b-5 text-center">Welcome!</h4>
                         <p class="text-muted text-center">Sign in to continue.</p>
 
                         <form class="form-horizontal m-t-30" action="" method="post">

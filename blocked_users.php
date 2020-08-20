@@ -69,7 +69,7 @@ include_once('includes/header_end.php');
                                                             <td><?php echo htmlentities ($row['name']);?></td>
                                                             <td><?php echo htmlentities ($row['email']);?></td>
                                                             <td><?php echo htmlentities ($row['phone']);?></td>
-                                                            <td><center><a class="btn btn-outline-danger btn-sm waves-effect waves-light" href="activate_user.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-account-off"></i></a></center></td>
+                                                            <td><center><a class="btn btn-outline-success btn-sm waves-effect waves-light" href="activate_user.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-account-check"></i></a></center></td>
                                                         </tr>
                                                     <?php } ?>
                                                 </tbody>
